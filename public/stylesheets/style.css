@@ -1,0 +1,101 @@
+.main {
+    margin-top: 10px;
+}
+
+.thumbnail img{
+    width: 150px;
+    height: 200px;
+    margin: auto;
+}
+
+.thumbnail description {
+    color: yellowgreen;
+}
+
+.price {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.price-cart {
+    margin-right: 19px;
+}
+
+.border {
+    border-color: 2px;
+}
+
+.checkout {
+    margin-top: 30px;
+    width: auto;
+}
+
+.newclass {
+
+    margin-top: 30px;
+    width: 500px;
+
+}
+
+.total {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+body {
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.NOVpcnohuowa6uiIS0WJgAHaEE&pid=Api&P=0&w=329&h=182");
+}
+
+.signup {
+        background-color: #c0d19f;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 550px;
+        height: 400px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 5px 15px 40px 7px rgba(0, 0, 0, 0.14);
+}
+
+
+.login {
+        background-color: #b7d5f0;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 600px;
+        height: 500px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.checkout {
+    max-width: 500px;
+    padding: 9px 18px;
+    background: #d4ecf5;
+    margin: 9px auto;
+    padding: 18px;
+    background: #dff1f7;
+    border-radius: 8450;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.cart {
+
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+
+
