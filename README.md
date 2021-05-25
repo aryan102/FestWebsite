@@ -5,6 +5,8 @@
  
  To run the project :
  
+ Clone the project in your computer.
+ 
  Move Inside the project folder and install Node.JS modules, MongoDB, Passport and Stripe in it.
  
  Run Mongod command for data access.
