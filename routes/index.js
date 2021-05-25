@@ -7,13 +7,13 @@ var Order = require('../models/order');
 
 router.get('/', function(req, res, next) {
     var successMgs = req.flash('success')[0];
-    Activity.find({}).lean().exec(function(error, docs){ //database comes with the name docs
-        var ActivityChunks = [];
-        var chunkSize = 3;//in 1 row 3 items
-        for (var i = 0; i < docs.length; i += chunkSize) {
-          ActivityChunks.push(docs.slice(i, i  + chunkSize));
+    Activity.find({}).lean().exec(function(error, docs){ 
+        var ActivityBits = [];
+        var bitsSize = 3;//in 1 row 3 items
+        for (var i = 0; i < docs.length; i += bitsSize) {
+          ActivityBits.push(docs.slice(i, i  + bitsSize));
         }
-        res.render('fest/index', { title: 'Fest Website', activities: ActivityChunks, successMgs: successMgs, noMessage: !successMgs });      
+        res.render('fest/index', { title: 'Fest Website', activities: ActivityBits, successMgs: successMgs, noMessage: !successMgs });       
     });
 }); 
 router.get('/add-to-cart/:id', function (req, res) {
@@ -39,10 +39,10 @@ router.get('/reduce/:id', function (req, res, next) {
     res.redirect('/fest-cart');
 });
 
-router.get('/remove/:id', function (req, res, next) {
+router.get('/add/:id', function (req, res, next) {
     var ActivityId = req.params.id;
     var cart = new Cart(req.session.cart ? req.session.cart : {});
-    cart.removeItem(ActivityId);
+    cart.increaseByOne(ActivityId);
     req.session.cart = cart;
     res.redirect('/fest-cart');
 });

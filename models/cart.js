@@ -25,10 +25,11 @@ module.exports = function Cart(oldCart) {
         }
     };
 
-    this.removeItem = function (id) {
-        this.totalQty -= this.items[id].qty;
-        this.totalPrice -= this.items[id].price;
-        delete this.items[id];
+    this.increaseByOne = function (id) {
+        this.items[id].qty++;
+        this.items[id].price += this.items[id].item.price;
+        this.totalQty++;
+        this.totalPrice += this.items[id].item.price;
     };
 
     this.generateArray = function () {//return the array of items stored in the elements
